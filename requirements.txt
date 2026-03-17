@@ -5,3 +5,4 @@ passlib
 bcrypt
 SQLAlchemy
 PyJWT
+pymysql
