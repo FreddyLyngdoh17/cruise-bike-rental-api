@@ -9,7 +9,7 @@ from sqlalchemy import Float # Add Float for the price
 
 # --- 1. Database Setup (MySQL) ---
 # Update YOUR_PASSWORD_HERE to your actual MySQL root password
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:Freddy17@localhost:3306/auth_db"
+SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
